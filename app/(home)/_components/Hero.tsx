@@ -1,6 +1,7 @@
 "use client";
 import Paragraph from "../../_components/typography/Paragraph";
 import Button from "../../_components/common/Button";
+import { scrollIntoView } from "@/app/_utils/scrollIntoView";
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
         <Button
           text="contacte moi"
           as="button"
-          onClick={() => console.log("test")}
+          onClick={(): void => scrollIntoView("#contact")}
         />
       </div>
     </section>
