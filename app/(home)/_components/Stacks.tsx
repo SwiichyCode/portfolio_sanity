@@ -3,6 +3,8 @@ import Image from "next/image";
 import { SanityStack } from "@/sanity/types";
 import { urlForImage } from "@/sanity/lib/image";
 import { AnimatedList, AnimatedItemList } from "@/app/_animations";
+import Paragraph from "@/app/_components/typography/Paragraph";
+import Title from "@/app/_components/typography/Title";
 
 type Props = {
   stacks: SanityStack[];
@@ -27,12 +29,15 @@ export default function Stacks({ stacks }: Props) {
               />
             ) : null}
             <div>
-              <h3 className="font-bold text-3xl leading-10 tracking-[-1px]">
-                {language}{" "}
-              </h3>
-              <p className="font-medium text-base leading-6 text-primary-grey">
-                {years} years experience
-              </p>
+              <Title
+                text={language}
+                as="h3"
+                className="font-bold text-3xl leading-10 tracking-[-1px]"
+              />
+              <Paragraph
+                text={`${years} years experience`}
+                className="font-medium text-base leading-6 text-primary-grey"
+              />
             </div>
           </AnimatedItemList>
         ))}

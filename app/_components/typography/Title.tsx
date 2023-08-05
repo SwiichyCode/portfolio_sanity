@@ -25,7 +25,9 @@ export default function Title({ text, as, className }: Props) {
         );
       case "h3":
         return (
-          <h3 className=" font-bold text-[24px] leading-10 tracking-[-1.13636px] md:flex md:flex-col md:gap-2">
+          <h3
+            className={`font-bold text-3xl leading-10 tracking-[-1.13636px] ${className}`}
+          >
             {text}
           </h3>
         );

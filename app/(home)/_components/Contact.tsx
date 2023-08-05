@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Title from "../../_components/typography/Title";
-import Paragraphe from "../../_components/typography/Paragraphe";
+import Paragraph from "../../_components/typography/Paragraph";
 import Input from "../../_components/common/Input";
 import TextArea from "../../_components/common/TextArea";
 import Button from "../../_components/common/Button";
@@ -52,7 +52,7 @@ export default function Contact() {
           as="h2"
           className="mb-5 lg:w-full lg:max-w-[445px] lg:text-left"
         />
-        <Paragraphe
+        <Paragraph
           text="I would love to hear about your project and how I could help. Please
           fill in the form, and I’ll get back to you as soon as possible."
         />
@@ -70,12 +70,16 @@ export default function Contact() {
         </div>
 
         {submitted && (
-          <p className="text-primary-green">Votre message a bien été envoyé.</p>
+          <Paragraph
+            text="Votre message a bien été envoyé."
+            className="text-primary-green"
+          />
         )}
         {error && (
-          <p className="text-primary-red">
-            Une erreur s&apos;est produite, veuillez réessayer.
-          </p>
+          <Paragraph
+            text="Une erreur s'est produite, veuillez réessayer."
+            className="text-primary-red"
+          />
         )}
       </form>
     </section>
