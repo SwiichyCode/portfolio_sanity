@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className=" text-center pt-14 pb-20 px-4 md:w-full md:max-w-[445px] lg:max-w-[1111px] lg:flex lg:justify-between lg:-mx-8"
+      className="text-center pt-14 pb-20 px-4 md:w-full md:max-w-[445px] md:m-auto md:px-8 lg:max-w-section lg:flex lg:justify-between lg:-mx-8"
     >
       <div className="mb-12 lg:w-full lg:max-w-[445px] lg:text-left">
         <Title
@@ -52,17 +52,14 @@ export default function Contact() {
           as="h2"
           className="mb-5 lg:w-full lg:max-w-[445px] lg:text-left"
         />
-        <Paragraph
-          text="I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible."
-        />
+        <Paragraph text="J'aimerais beaucoup en savoir plus sur votre projet et comment je pourrais vous aider. Veuillez remplir le formulaire, et je vous répondrai dès que possible." />
       </div>
       <form
         ref={form}
         onSubmit={handleSubmit}
         className="w-full flex flex-col gap-8 lg:max-w-[445px]"
       >
-        <Input placeholder="name" type="text" name="to_name" required />
+        <Input placeholder="nom" type="text" name="to_name" required />
         <Input placeholder="email" type="email" name="from_name" required />
         <TextArea placeholder="message" name="message" required />
         <div className="ml-auto">
