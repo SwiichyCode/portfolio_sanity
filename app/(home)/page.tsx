@@ -4,6 +4,7 @@ import Header from "../_components/layout/Header";
 import Hero from "../_components/layout/Hero";
 import Stacks from "../_components/layout/Stacks";
 import Projects from "../_components/layout/Projects";
+import Contact from "../_components/layout/Contact";
 
 export default async function Home() {
   const stacks = await cachedClient(stackQuery);
@@ -15,6 +16,7 @@ export default async function Home() {
       <Hero />
       <Stacks stacks={stacks} />
       <Projects projects={projects} />
+      <Contact />
     </>
   );
 }

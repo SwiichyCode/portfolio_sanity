@@ -17,7 +17,9 @@ export default function Title({ text, as, className }: Props) {
         );
       case "h2":
         return (
-          <h2 className=" font-bold text-[40px] leading-10 tracking-[-1.13636px] lg:text-[88px] lg:leading-[88px]">
+          <h2
+            className={`font-bold text-[40px] leading-10 tracking-[-1.13636px] lg:text-[88px] lg:leading-[88px] ${className}`}
+          >
             {text}
           </h2>
         );
