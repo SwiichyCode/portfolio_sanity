@@ -1,10 +1,11 @@
 "use client";
-import Title from "../../_components/typography/Title";
-import Button from "../../_components/common/Button";
-import ProjectCard from "./ProjectCard";
 import { AnimatedList, AnimatedItemList } from "@/app/_animations";
 import { SanityProject } from "@/sanity/types";
 import { scrollIntoView } from "@/app/_utils/scrollIntoView";
+import Section from "@/app/_components/layout/Section";
+import Title from "../../_components/typography/Title";
+import Button from "../../_components/common/Button";
+import ProjectCard from "./ProjectCard";
 
 type Props = {
   projects: SanityProject[];
@@ -12,7 +13,7 @@ type Props = {
 
 export default function Projects({ projects }: Props) {
   return (
-    <section className="flex flex-col justify-center items-center px-4 md:mb-24 md:px-8 lg:w-full lg:max-w-section">
+    <Section className="flex flex-col justify-center items-center px-4 md:mb-24 md:px-8">
       <header className="w-full flex justify-between items-center mb-10 md:mb-14">
         <Title text="Projets" as="h2" />
         <Button
@@ -28,6 +29,6 @@ export default function Projects({ projects }: Props) {
           </AnimatedItemList>
         ))}
       </AnimatedList>
-    </section>
+    </Section>
   );
 }
