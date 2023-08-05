@@ -15,7 +15,7 @@ export default function Hero() {
       </h1>
       <div className="flex flex-col items-center gap-6 md:items-start">
         <Paragraph
-          text="Je réside en France, et je suis un développeur front-end passionné par la création d'applications web attrayantes et conviviales."
+          text="Je réside en France, je suis un développeur front-end passionné par la création d'applications web attrayantes et conviviales."
           className="w-full max-w-[445px]"
         />
         <Button
