@@ -36,7 +36,7 @@ export default function Stacks({ stacks }: Props) {
                 className="font-bold text-3xl leading-10 tracking-[-1px]"
               />
               <Paragraph
-                text={`${years} years experience`}
+                text={`${years} an${years > 1 ? "s" : ""} d'expérience`}
                 className="font-medium text-base leading-6 text-primary-grey"
               />
             </div>

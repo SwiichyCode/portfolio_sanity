@@ -1,6 +1,6 @@
 export type SanityStack = {
   language: string;
-  years: string;
+  years: number;
   order: number;
   icon: any;
 };
