@@ -8,7 +8,8 @@ import Stacks from "./_components/Stacks";
 import Projects from "./_components/Projects";
 import Footer from "../_components/layout/Footer";
 import PreviewProvider from "../_components/PreviewProvider";
-import PreviewTasks from "../_components/PreviewTasks";
+import PreviewStacks from "../_components/PreviewTasks";
+import PreviewProjects from "../_components/PreviewProjects";
 
 export default async function Home() {
   const preview = draftMode().isEnabled
@@ -20,7 +21,8 @@ export default async function Home() {
   if (preview && preview.token) {
     return (
       <PreviewProvider token={preview.token}>
-        <PreviewTasks stacks={stacks} />
+        <PreviewStacks stacks={stacks} />
+        <PreviewProjects projects={projects} />
       </PreviewProvider>
     );
   }

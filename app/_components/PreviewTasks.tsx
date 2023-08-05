@@ -4,7 +4,7 @@ import { stackQuery } from "@/sanity/lib/queries";
 import { SanityStack } from "@/sanity/types";
 import Stacks from "../(home)/_components/Stacks";
 
-export default function PreviewTasks({
+export default function PreviewStacks({
   stacks = [],
 }: {
   stacks: SanityStack[];
