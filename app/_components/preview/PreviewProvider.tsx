@@ -2,9 +2,9 @@
 import { getClient } from "@/sanity/lib/getClient";
 import { LiveQueryProvider } from "@sanity/preview-kit";
 import { useMemo } from "react";
-import Header from "./layout/Header";
-import Hero from "../(home)/_components/Hero";
-import Footer from "./layout/Footer";
+import Header from "../layout/Header";
+import Hero from "../../(home)/_components/Hero";
+import Footer from "../layout/Footer";
 
 type Props = {
   children: React.ReactNode;
