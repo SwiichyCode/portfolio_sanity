@@ -13,7 +13,7 @@ export default function Hero() {
       </h1>
       <div className="flex flex-col items-center gap-6 md:items-start">
         <Paragraphe
-          text="Based in the France, I’m a front-end developer passionate about
+          text="Based in France, I’m a front-end developer passionate about
           building accessible web apps that users love."
           className="w-full max-w-[445px]"
         />
