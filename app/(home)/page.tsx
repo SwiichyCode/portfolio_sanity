@@ -1,5 +1,4 @@
 import { draftMode } from "next/headers";
-import { cachedClient } from "@/sanity/lib/client";
 import { getCachedClient } from "@/sanity/lib/getClient";
 import { stackQuery, projectQuery } from "@/sanity/lib/queries";
 import Header from "../_components/layout/Header";

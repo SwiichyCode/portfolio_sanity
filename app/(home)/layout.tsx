@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "../_styles/globals.css";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={space_grotesk.className}>
         <div className="relative flex flex-col gap-section bg-primary-black text-white md:gap-0 md:px-0 lg:items-center">
+          <Analytics />
           {children}
         </div>
       </body>
