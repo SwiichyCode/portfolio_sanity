@@ -1,6 +1,6 @@
 "use client";
-import Title from "../typography/Title";
-import Button from "../common/Button";
+import Title from "../../_components/typography/Title";
+import Button from "../../_components/common/Button";
 import ProjectCard from "./ProjectCard";
 import { AnimatedList, AnimatedItemList } from "@/app/_animations";
 import { SanityProject } from "@/sanity/types";
@@ -19,7 +19,7 @@ export default function Projects({ projects }: Props) {
       <AnimatedList className="w-full flex flex-wrap justify-center min-[1190px]:justify-between items-center gap-10  md:gap-x-7 md:gap-y-16">
         {projects.map((project, index) => (
           <AnimatedItemList key={index}>
-            <ProjectCard project={project} projectsLength={projects.length} />
+            <ProjectCard project={project} />
           </AnimatedItemList>
         ))}
       </AnimatedList>

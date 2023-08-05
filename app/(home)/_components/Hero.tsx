@@ -1,6 +1,6 @@
 "use client";
-import Paragraphe from "../typography/Paragraphe";
-import Button from "../common/Button";
+import Paragraphe from "../../_components/typography/Paragraphe";
+import Button from "../../_components/common/Button";
 
 export default function Hero() {
   return (

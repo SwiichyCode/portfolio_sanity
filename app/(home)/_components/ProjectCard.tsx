@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { SanityProject } from "@/sanity/types";
 import { urlForImage } from "@/sanity/lib/image";
-import Title from "../typography/Title";
-import Button from "../common/Button";
+import Title from "../../_components/typography/Title";
+import Button from "../../_components/common/Button";
 
 type Props = {
   project: SanityProject;
-  projectsLength: number;
 };
 
-export default function ProjectCard({ project, projectsLength }: Props) {
+export default function ProjectCard({ project }: Props) {
   const { title, stack, images, liveUrl, githubUrl } = project;
 
   return (

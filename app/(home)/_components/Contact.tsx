@@ -1,11 +1,11 @@
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Title from "../typography/Title";
-import Paragraphe from "../typography/Paragraphe";
-import Input from "../common/Input";
-import TextArea from "../common/TextArea";
-import Button from "../common/Button";
+import Title from "../../_components/typography/Title";
+import Paragraphe from "../../_components/typography/Paragraphe";
+import Input from "../../_components/common/Input";
+import TextArea from "../../_components/common/TextArea";
+import Button from "../../_components/common/Button";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
