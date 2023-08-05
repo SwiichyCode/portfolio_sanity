@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={space_grotesk.className}>
-        <div className="relative flex flex-col gap-section bg-primary-black text-white px-4 md:gap-0 md:px-0 lg:items-center">
+        <div className="relative flex flex-col gap-section bg-primary-black text-white md:gap-0 md:px-0 lg:items-center">
           {children}
         </div>
       </body>
