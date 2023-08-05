@@ -44,14 +44,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="text-center pt-14 pb-20 px-4 md:w-full md:max-w-[445px] md:m-auto md:px-8 lg:max-w-section lg:flex lg:justify-between lg:-mx-8"
+      className="text-center pt-14 pb-20 px-4 md:w-full md:max-w-[540px] md:m-auto md:px-0 lg:max-w-section lg:flex lg:justify-between lg:-mx-8 lg:px-8"
     >
       <div className="mb-12 lg:w-full lg:max-w-[445px] lg:text-left">
-        <Title
-          text="Contact"
-          as="h2"
-          className="mb-5 lg:w-full lg:max-w-[445px] lg:text-left"
-        />
+        <Title text="Contact" as="h2" className="mb-5 lg:w-full" />
         <Paragraph text="J'aimerais beaucoup en savoir plus sur votre projet et comment je pourrais vous aider. Veuillez remplir le formulaire, et je vous répondrai dès que possible." />
       </div>
       <form
