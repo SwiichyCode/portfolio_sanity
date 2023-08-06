@@ -14,6 +14,7 @@ export default async function Home() {
   const preview = draftMode().isEnabled
     ? { token: process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN }
     : undefined;
+
   const stacks = await getCachedClient(preview)(stackQuery);
   const projects = await getCachedClient(preview)(projectQuery);
 

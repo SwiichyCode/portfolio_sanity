@@ -3,8 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Title from "../../_components/typography/Title";
 import Paragraph from "../../_components/typography/Paragraph";
-import Input from "../../_components/common/Input";
-import TextArea from "../../_components/common/TextArea";
+import TextField from "../../_components/common/TextField";
 import Button from "../../_components/common/Button";
 
 export default function Contact() {
@@ -55,9 +54,10 @@ export default function Contact() {
         onSubmit={handleSubmit}
         className="w-full flex flex-col gap-8 lg:max-w-[445px]"
       >
-        <Input placeholder="nom" type="text" name="to_name" required />
-        <Input placeholder="email" type="email" name="from_name" required />
-        <TextArea placeholder="message" name="message" required />
+        <TextField placeholder="nom" type="text" name="to_name" required />
+        <TextField placeholder="email" type="email" name="from_name" required />
+        <TextField isTextArea placeholder="message" name="message" required />
+
         <div className="ml-auto">
           <Button as="button" text="envoyer" type="submit" />
         </div>
