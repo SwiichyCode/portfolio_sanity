@@ -21,12 +21,12 @@ export default function ProjectCard({ project }: Props) {
           alt={title}
           width={540}
           height={540}
-          className="object-cover cursor-pointer transition-all duration-200 ease-in-out mix-blend-normal"
+          className="cursor-pointer transition-all duration-200 ease-in-out mix-blend-normal"
         />
       )}
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4 md:gap-0">
         <Title text={title} as="h4" />
-        <ul className="flex gap-4">
+        <ul className="flex flex-wrap gap-4">
           {stack &&
             stack.map(({ language }, index) => (
               <li
